@@ -6,6 +6,8 @@
 
 <title>Piyush Gurjar | Research Portfolio</title>
 
+<link rel="icon" type="image/png" href="image/whatsApp.png">
+
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
@@ -16,6 +18,18 @@ padding:0;
 box-sizing:border-box;
 font-family:Poppins,sans-serif;
 scroll-behavior:smooth;
+}
+
+html{
+
+scroll-behavior:smooth;
+
+}
+
+section{
+
+scroll-margin-top:80px;
+
 }
 
 body{
@@ -59,7 +73,8 @@ flex:1;
 
 .hero h1{
 
-font-size:48px;
+font-size:60px;
+font-weight:700;
 margin-bottom:10px;
 
 }
@@ -114,8 +129,16 @@ nav a{
 
 text-decoration:none;
 color:#2E7D32;
-margin:15px;
+margin:20px;
 font-weight:600;
+font-size:18px;
+transition:.3s;
+
+}
+
+nav a:hover{
+
+color:#1B5E20;
 
 }
 
@@ -139,6 +162,14 @@ padding:30px;
 margin-bottom:25px;
 border-radius:12px;
 box-shadow:0 5px 15px rgba(0,0,0,.08);
+transition:0.3s ease;
+
+}
+
+.card:hover{
+
+transform:translateY(-8px);
+box-shadow:0 15px 35px rgba(0,0,0,.15);
 
 }
 
@@ -367,7 +398,9 @@ Bacterial degradation of Di-(2-ethylhexyl) phthalate (DEHP) and in silico analys
 
 <li>
 
-Gurjar, P., Kumar, K., Kushwah, S., Patel, A.K., Karthikeyan, O.P., Bhatia, S.K., Zuorro, A., Khare, P., Mehariya, S. (2026). Recent development in algae-based biostimulant production for sustainable agriculture: Market trend, available products, and future perspectives. <i> </i>Bioresour. Technol. Rep. <i></i> 102892. https://doi.org/10.1016/j.biteb.2026.102892 
+Gurjar, P., Kumar, K., Kushwah, S., Patel, A.K., Karthikeyan, O.P., Bhatia, S.K., Zuorro, A., Khare, P., Mehariya, S. (2026). Recent development in algae-based biostimulant production for sustainable agriculture: Market trend, available products, and future perspectives. <i> </i>Bioresour. Technol. Rep. <i></i> 102892. <a href="https://doi.org/10.1016/j.biteb.2026.102892" target="_blank">
+https://doi.org/10.1016/j.biteb.2026.102892
+</a>
 
 </li>
 
@@ -375,7 +408,9 @@ Gurjar, P., Kumar, K., Kushwah, S., Patel, A.K., Karthikeyan, O.P., Bhatia, S.K.
 
 <li>
 
-Gangwar, A., Gurjar, P., Gupta, V. K., Dulay, S., Varjos, I., & Gupta, P. (2026). Development of CNT thin film electrodes for lead ion sensing: a step toward scalable water quality monitoring. <i> </i>Journal of Electroanalytical Chemistry <i></i>, 120284. https://doi.org/10.1016/j.jelechem.2026.120284 
+Gangwar, A., Gurjar, P., Gupta, V. K., Dulay, S., Varjos, I., & Gupta, P. (2026). Development of CNT thin film electrodes for lead ion sensing: a step toward scalable water quality monitoring. <i> </i>Journal of Electroanalytical Chemistry <i></i>, 120284. <a href="https://doi.org/10.1016/j.jelechem.2026.120284" target="_blank">
+https://doi.org/10.1016/j.jelechem.2026.120284
+</a>
 
 </li>
 
@@ -489,21 +524,44 @@ RStudio
 
 </p>
 
-<p>
+<div class="social-icons">
 
 <a href="https://www.linkedin.com/in/piyush-gurjar-007026311/" target="_blank">
-    <img src="image/Linkedin.png" alt="LinkedIn" width="40" height="40">
+<img src="image/Linkedin.png" alt="LinkedIn">
 </a>
 
 <a href="https://scholar.google.com/citations?user=6r19AZgAAAAJ&hl=en" target="_blank">
-    <img src="image/Google Scholar.png" alt="Google Scholar" width="40" height="40">
+<img src="image/Google Scholar.png" alt="Google Scholar">
 </a>
 
 <a href="https://orcid.org/0009-0009-3135-6695" target="_blank">
-    <img src="image/ORCID_iD.png" alt="ORCID" width="40" height="40">
+<img src="image/ORCID_iD.png" alt="ORCID">
 </a>
 
-</p>
+</div>
+.social-icons{
+
+display:flex;
+justify-content:center;
+align-items:center;
+gap:25px;
+margin-top:20px;
+
+}
+
+.social-icons img{
+
+width:45px;
+height:45px;
+transition:0.3s;
+
+}
+
+.social-icons img:hover{
+
+transform:scale(1.2);
+
+}
 
 </div>
 

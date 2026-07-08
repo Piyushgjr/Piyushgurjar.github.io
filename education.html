@@ -362,6 +362,56 @@ font-size:15px;
 }
 
 /*======================================================
+                THESIS CARDS
+=======================================================*/
+
+.thesis-grid{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:30px;
+margin-top:35px;
+
+}
+
+.thesis-box{
+
+background:#F8FFF8;
+padding:30px;
+border-radius:15px;
+box-shadow:0 8px 20px rgba(0,0,0,.08);
+border-top:5px solid #2E7D32;
+transition:.3s;
+
+}
+
+.thesis-box:hover{
+
+transform:translateY(-8px);
+box-shadow:0 15px 30px rgba(0,0,0,.15);
+
+}
+
+.thesis-box h3{
+
+color:#2E7D32;
+margin-bottom:20px;
+
+}
+
+.thesis-box ul{
+
+padding-left:20px;
+
+}
+
+.thesis-box li{
+
+margin-bottom:12px;
+
+}
+
+/*======================================================
                 COURSEWORK
 =======================================================*/
 

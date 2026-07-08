@@ -1,21 +1,525 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Piyush Gurjar | Research Profile</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="style.css">
+<title>Piyush Gurjar | Research Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins,sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+
+background:#f4f7fb;
+color:#222;
+line-height:1.7;
+
+}
+
+header{
+
+background:#0d47a1;
+color:white;
+padding:70px 10%;
+
+}
+
+.container{
+
+width:90%;
+max-width:1200px;
+margin:auto;
+
+}
+
+.hero{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+flex-wrap:wrap;
+
+}
+
+.hero-text{
+
+flex:1;
+
+}
+
+.hero h1{
+
+font-size:48px;
+margin-bottom:10px;
+
+}
+
+.hero h3{
+
+font-weight:400;
+margin-bottom:20px;
+
+}
+
+.hero p{
+
+max-width:650px;
+
+}
+
+.photo{
+
+width:250px;
+height:250px;
+border-radius:50%;
+background:#ddd;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:18px;
+color:#666;
+
+}
+
+nav{
+
+background:white;
+padding:15px;
+text-align:center;
+box-shadow:0 2px 10px rgba(0,0,0,.08);
+
+position:sticky;
+top:0;
+z-index:1000;
+
+}
+
+nav a{
+
+text-decoration:none;
+color:#0d47a1;
+margin:15px;
+font-weight:600;
+
+}
+
+section{
+
+padding:70px 0;
+
+}
+
+h2{
+
+color:#0d47a1;
+margin-bottom:25px;
+
+}
+
+.card{
+
+background:white;
+padding:30px;
+margin-bottom:25px;
+border-radius:12px;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+}
+
+ul{
+
+padding-left:20px;
+
+}
+
+footer{
+
+background:#0d47a1;
+color:white;
+text-align:center;
+padding:25px;
+
+}
+
+.button{
+
+display:inline-block;
+margin-top:20px;
+padding:12px 30px;
+background:#1565c0;
+color:white;
+text-decoration:none;
+border-radius:8px;
+
+}
+
+.button:hover{
+
+background:#0b3d91;
+
+}
+
+.skills{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+
+}
+
+.skill{
+
+background:#eef5ff;
+padding:20px;
+border-radius:10px;
+
+}
+
+@media(max-width:800px){
+
+.hero{
+
+flex-direction:column;
+
+}
+
+.photo{
+
+margin-top:40px;
+
+}
+
+.hero h1{
+
+font-size:36px;
+
+}
+
+}
+
+</style>
+
 </head>
 
 <body>
 
-    <h1>Piyush Gurjar</h1>
+<header>
 
-    <h3>Microbiologist | Environmental Biotechnology Researcher</h3>
+<div class="container hero">
 
-    <p>Welcome to my personal research website.</p>
+<div class="hero-text">
+
+<h1>Piyush Gurjar</h1>
+
+<h3>Microbiologist | Environmental Biotechnology | Microalgal Biotechnology | Waste Valorisation</h3>
+
+<p>
+
+I am a microbiologist passionate about sustainable biotechnology, environmental microbiology, microalgal biotechnology, waste valorisation and bioprocess engineering. My research integrates microbiology, computational biology and environmental engineering to develop sustainable solutions for pollution remediation, circular bioeconomy and resource recovery.
+
+</p>
+
+<a href="cv/Piyush_Gurjar_CV.pdf" class="button">Download CV</a>
+
+</div>
+
+<div class="photo">
+
+Your Photo
+
+</div>
+
+</div>
+
+</header>
+
+<nav>
+
+<a href="#about">About</a>
+
+<a href="#education">Education</a>
+
+<a href="#research">Research</a>
+
+<a href="#publications">Publications</a>
+
+<a href="#skills">Skills</a>
+
+<a href="#contact">Contact</a>
+
+</nav>
+
+<div class="container">
+
+<section id="about">
+
+<h2>About Me</h2>
+
+<div class="card">
+
+<p>
+
+Currently interested in Environmental Microbiology, Waste Valorisation, Microalgal Biotechnology, Carbon Capture, Circular Bioeconomy and Sustainable Bioprocesses.
+
+I enjoy combining laboratory experimentation with computational biology to solve environmental problems.
+
+</p>
+
+</div>
+
+</section>
+
+<section id="education">
+
+<h2>Education</h2>
+
+<div class="card">
+
+<h3>Integrated Master of Science (BS-MS) in Microbiology</h3>
+
+<p>
+
+Central University of Rajasthan
+
+</p>
+
+<p>
+
+2019 – 2024
+
+</p>
+
+<p>
+
+CGPA: 7.26 / 10
+
+</p>
+
+<br>
+
+<b>Master's Thesis</b>
+
+<p>
+
+Bacterial degradation of Di-(2-ethylhexyl) phthalate (DEHP) and in silico analysis of interaction with Carboxylesterase Est2.
+
+</p>
+
+</div>
+
+</section>
+
+<section id="research">
+
+<h2>Research Interests</h2>
+
+<div class="card">
+
+<ul>
+
+<li>Environmental Microbiology</li>
+
+<li>Waste Valorisation</li>
+
+<li>Microalgal Biotechnology</li>
+
+<li>Bioremediation</li>
+
+<li>Carbon Capture and Utilisation</li>
+
+<li>Circular Bioeconomy</li>
+
+<li>Bioprocess Engineering</li>
+
+<li>Wastewater Treatment</li>
+
+<li>Microbial Biotechnology</li>
+
+<li>Computational Biology</li>
+
+</ul>
+
+</div>
+
+</section>
+
+<section id="publications">
+
+<h2>Selected Publications</h2>
+
+<div class="card">
+
+<ol>
+
+<li>
+
+Recent development in algae-based biostimulant production for sustainable agriculture: Market trend, available products and future perspectives. <i>Bioresource Technology Reports</i> (2026).
+
+</li>
+
+<br>
+
+<li>
+
+Development of CNT thin film electrodes for lead ion sensing: A step toward scalable water quality monitoring. <i>Journal of Electroanalytical Chemistry</i> (2026).
+
+</li>
+
+</ol>
+
+</div>
+
+</section>
+
+<section id="skills">
+
+<h2>Technical Skills</h2>
+
+<div class="skills">
+
+<div class="skill">
+
+<h3>Microbiology</h3>
+
+Microbial isolation
+
+PCR
+
+DNA/RNA Isolation
+
+Gel Electrophoresis
+
+Antibiotic Resistance
+
+</div>
+
+<div class="skill">
+
+<h3>Bioprocess</h3>
+
+Bioreactor
+
+Waste Valorisation
+
+Microalgae
+
+Carbon Capture
+
+Wastewater Treatment
+
+</div>
+
+<div class="skill">
+
+<h3>Analytical</h3>
+
+HPLC
+
+GC-MS
+
+FTIR
+
+UV-Vis
+
+FESEM
+
+DSC
+
+</div>
+
+<div class="skill">
+
+<h3>Computational Biology</h3>
+
+AutoDock
+
+SwissDock
+
+Modeller
+
+Discovery Studio
+
+Chimera
+
+Python
+
+RStudio
+
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2>Contact</h2>
+
+<div class="card">
+
+<p>
+
+📍 Tonk, Rajasthan, India
+
+</p>
+
+<p>
+
+📧 piyushgurjar492@gmail.com
+
+</p>
+
+<p>
+
+📧 piyushgurjar492@outlook.com
+
+</p>
+
+<p>
+
+GitHub: https://github.com/yourusername
+
+</p>
+
+<p>
+
+LinkedIn: Add your profile
+
+</p>
+
+<p>
+
+Google Scholar: Add your profile
+
+</p>
+
+<p>
+
+ORCID: Add your ORCID
+
+</p>
+
+</div>
+
+</section>
+
+</div>
+
+<footer>
+
+© 2026 Piyush Gurjar | Research Portfolio
+
+</footer>
 
 </body>
 

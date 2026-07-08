@@ -283,7 +283,84 @@ margin-bottom:15px;
 
 }
 
-/*================ RESPONSIVE ================*/
+/*======================================================
+                DEGREE OVERVIEW
+=======================================================*/
+
+.stats{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+gap:30px;
+
+margin-top:40px;
+
+}
+
+.stat-card{
+
+background:white;
+
+padding:35px;
+
+border-radius:18px;
+
+text-align:center;
+
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+transition:0.35s;
+
+cursor:pointer;
+
+}
+
+.stat-card:hover{
+
+transform:translateY(-10px);
+
+box-shadow:0 20px 40px rgba(0,0,0,.15);
+
+}
+
+.stat-icon{
+
+font-size:55px;
+
+margin-bottom:20px;
+
+}
+
+.stat-card h3{
+
+color:#2E7D32;
+
+font-size:24px;
+
+margin-bottom:15px;
+
+}
+
+.stat-card p{
+
+font-size:20px;
+
+font-weight:600;
+
+margin-bottom:10px;
+
+}
+
+.stat-card span{
+
+color:#666;
+
+font-size:15px;
+
+}
+
 /*======================================================
                 COURSEWORK
 =======================================================*/
@@ -1057,83 +1134,91 @@ Successfully completed the Integrated BS–MS programme in Microbiology with a C
 
 </section>
 
-/*======================================================
-                DEGREE OVERVIEW
-=======================================================*/
+<!-- ===================================================== -->
+<!--                  DEGREE OVERVIEW                       -->
+<!-- ===================================================== -->
 
-.stats{
+<section id="degree">
 
-display:grid;
+<h2>Academic Profile</h2>
 
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+<div class="stats">
 
-gap:30px;
+<div class="stat-card">
 
-margin-top:40px;
+<div class="stat-icon">🎓</div>
 
-}
+<h3>Degree</h3>
 
-.stat-card{
+<p>Integrated BS–MS</p>
 
-background:white;
+<span>Microbiology</span>
 
-padding:35px;
+</div>
 
-border-radius:18px;
+<div class="stat-card">
 
-text-align:center;
+<div class="stat-icon">🏛️</div>
 
-box-shadow:0 10px 30px rgba(0,0,0,.08);
+<h3>University</h3>
 
-transition:0.35s;
+<p>Central University of Rajasthan</p>
 
-cursor:pointer;
+<span>Ajmer, Rajasthan</span>
 
-}
+</div>
 
-.stat-card:hover{
+<div class="stat-card">
 
-transform:translateY(-10px);
+<div class="stat-icon">📅</div>
 
-box-shadow:0 20px 40px rgba(0,0,0,.15);
+<h3>Duration</h3>
 
-}
+<p>2019–2024</p>
 
-.stat-icon{
+<span>Five-Year Integrated Programme</span>
 
-font-size:55px;
+</div>
 
-margin-bottom:20px;
+<div class="stat-card">
 
-}
+<div class="stat-icon">📊</div>
 
-.stat-card h3{
+<h3>CGPA</h3>
 
-color:#2E7D32;
+<p>7.26 / 10</p>
 
-font-size:24px;
+<span>Overall Performance</span>
 
-margin-bottom:15px;
+</div>
 
-}
+<div class="stat-card">
 
-.stat-card p{
+<div class="stat-icon">🔬</div>
 
-font-size:20px;
+<h3>Research Area</h3>
 
-font-weight:600;
+<p>Environmental Microbiology</p>
 
-margin-bottom:10px;
+<span>Computational Biology</span>
 
-}
+</div>
 
-.stat-card span{
+<div class="stat-card">
 
-color:#666;
+<div class="stat-icon">🧫</div>
 
-font-size:15px;
+<h3>Major Thesis</h3>
 
-}
+<p>DEHP Biodegradation</p>
+
+<span>Plastic Pollution Remediation</span>
+
+</div>
+
+</div>
+
+</section>
 
 <!-- ===================================================== -->
 <!--                  MASTER'S THESIS                       -->

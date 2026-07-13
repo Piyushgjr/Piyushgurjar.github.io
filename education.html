@@ -136,24 +136,27 @@ transform:translateY(-3px);
 
 }
 
-/*================ NAVIGATION ================*/
+/*======================================================
+                    NAVIGATION
+=======================================================*/
 
 nav{
 
 background:white;
 padding:18px;
 text-align:center;
-box-shadow:0 3px 12px rgba(0,0,0,.08);
+box-shadow:0 2px 10px rgba(0,0,0,.08);
 position:sticky;
 top:0;
 z-index:1000;
-
+  
 }
 
 nav a{
 
 text-decoration:none;
-margin:18px;
+margin:10px;
+padding:8px 15px;
 font-size:18px;
 font-weight:600;
 color:#2E7D32;
@@ -163,7 +166,16 @@ transition:.3s;
 
 nav a:hover{
 
+background:#E8F5E9;
 color:#1B5E20;
+
+}
+
+nav a.active{
+
+color:#1B5E20;
+border-bottom:3px solid #2E7D32;
+padding-bottom:8px;
 
 }
 
@@ -411,6 +423,22 @@ margin-bottom:12px;
 
 }
 
+/*======================================================
+                THESIS IMAGE
+=======================================================*/
+
+.thesis-image{
+
+display:block;
+width:100%;
+max-width:900px;
+height:auto;
+margin:0 auto 35px;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,.15);
+
+}
+  
 /*======================================================
             LABORATORY TECHNIQUES
 =======================================================*/
@@ -875,19 +903,6 @@ transform:translateY(-5px);
 
 }
 
-/*======================================================
-              ACTIVE NAVIGATION
-=======================================================*/
-
-nav a.active{
-
-color:#1B5E20;
-
-border-bottom:3px solid #2E7D32;
-
-padding-bottom:8px;
-
-}
 
 /*======================================================
              GENERAL IMAGE EFFECT
@@ -1182,7 +1197,6 @@ Plastic pollution has become one of the major environmental challenges worldwide
 </div>
 
 </div>
-</ul>
 
 <br>
 
@@ -1602,13 +1616,18 @@ Microbiologist | Environmental Biotechnology | Microalgal Biotechnology | Waste 
 
 <p>
 
-📧 <strong>Email:</strong> piyushgurjar492@gmail.com
+📧
+<a href="mailto:piyushgurjar492@gmail.com">
+
+piyushgurjar492@gmail.com
+
+</a>
 
 </p>
 
 <p>
 
-📍 <strong>Location:</strong> Lucknow, Uttar Pradesh, India
+📍 Lucknow, Uttar Pradesh, India
 
 </p>
 

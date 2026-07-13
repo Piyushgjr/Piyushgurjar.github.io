@@ -108,27 +108,6 @@ object-fit:cover;
 
 }
 
-.button{
-
-display:inline-block;
-margin-top:30px;
-padding:14px 35px;
-background:white;
-color:#2E7D32;
-text-decoration:none;
-font-weight:600;
-border-radius:8px;
-transition:.3s;
-
-}
-
-.button:hover{
-
-background:#E8F5E9;
-transform:translateY(-3px);
-
-}
-
 /*======================================================
                     NAVIGATION
 =======================================================*/
@@ -136,11 +115,17 @@ transform:translateY(-3px);
 nav{
 
 background:white;
+
 padding:18px;
+
 text-align:center;
+
 box-shadow:0 2px 10px rgba(0,0,0,.08);
+
 position:sticky;
+
 top:0;
+
 z-index:1000;
 
 }
@@ -148,22 +133,25 @@ z-index:1000;
 nav a{
 
 text-decoration:none;
-color:#2E7D32;
-margin:18px;
+margin:10px;
+padding:8px 15px;
 font-size:18px;
 font-weight:600;
+color:#2E7D32;
 transition:.3s;
 
 }
 
 nav a:hover{
 
+background:#E8F5E9;
 color:#1B5E20;
 
 }
 
 nav a.active{
 
+color:#1B5E20;
 border-bottom:3px solid #2E7D32;
 padding-bottom:8px;
 
@@ -741,6 +729,18 @@ opacity:.85;
 
 }
 
+footer a{
+
+color:white;
+text-decoration:none;
+
+}
+
+footer a:hover{
+
+text-decoration:underline;
+
+}
   
 </style>
 
@@ -765,12 +765,6 @@ opacity:.85;
 I am a microbiologist passionate about sustainable biotechnology, environmental microbiology, microalgal biotechnology and circular bioeconomy. My research integrates laboratory experimentation with computational biology to develop innovative solutions for pollution remediation, waste valorisation and sustainable bioprocess engineering.
 
 </p>
-
-<a href="cv/Piyush_Gurjar_CV.pdf" class="button">
-
-Download CV
-
-</a>
 
 </div>
 
@@ -805,86 +799,6 @@ Download CV
 </nav>
 
 <div class="container">
-
-<!--======================================================
-                PROFESSIONAL PROFILE
-=======================================================-->
-
-<section id="profile">
-
-<h2>Professional Profile</h2>
-
-<div class="profile-grid">
-
-<div class="profile-card">
-
-<div class="profile-icon">🎓</div>
-
-<h3>Education</h3>
-
-<p>
-
-Integrated Bachelor of Science–Master of Science (BS–MS) in Microbiology from the Central University of Rajasthan, with interdisciplinary training in microbiology, molecular biology, environmental biotechnology and computational biology.
-
-</p>
-
-</div>
-
-
-
-<div class="profile-card">
-
-<div class="profile-icon">🧪</div>
-
-<h3>Current Position</h3>
-
-<p>
-
-Project Associate-I at the Bioprocess Laboratory, Phytochemistry Division, CSIR–Central Institute of Medicinal and Aromatic Plants (CSIR-CIMAP), Lucknow, working on waste valorisation, microalgal biotechnology and sustainable bioprocesses.
-
-</p>
-
-</div>
-
-
-
-<div class="profile-card">
-
-<div class="profile-icon">🔬</div>
-
-<h3>Research Experience</h3>
-
-<p>
-
-Research experience in environmental microbiology, biodegradation of organic pollutants, microalgae cultivation, electrochemical sensors, wastewater treatment, analytical techniques and computational biology.
-
-</p>
-
-</div>
-
-
-
-<div class="profile-card">
-
-<div class="profile-icon">🌍</div>
-
-<h3>Research Areas</h3>
-
-<p>
-
-Environmental Biotechnology<br>
-Microalgal Biotechnology<br>
-Waste Valorisation<br>
-Bioprocess Engineering<br>
-Circular Bioeconomy
-
-</p>
-
-</div>
-
-</div>
-
-</section>
 
 <!--======================================================
                         ABOUT ME
@@ -1007,272 +921,6 @@ My long-term objective is to establish an internationally recognized research pr
 </section>
 
 <!--======================================================
-                TECHNICAL EXPERTISE
-=======================================================-->
-
-<section id="expertise">
-
-<h2>Technical Expertise</h2>
-
-<div class="expertise-grid">
-
-<div class="expertise-card">
-
-<div class="expertise-icon">🦠</div>
-
-<h3>Microbiology</h3>
-
-<ul>
-
-<li>Microbial Isolation & Cultivation</li>
-
-<li>Environmental Microbiology</li>
-
-<li>Bioremediation</li>
-
-<li>Microbial Consortia Development</li>
-
-<li>Culture Preservation</li>
-
-</ul>
-
-</div>
-
-
-
-<div class="expertise-card">
-
-<div class="expertise-icon">🧬</div>
-
-<h3>Molecular Biology</h3>
-
-<ul>
-
-<li>DNA & RNA Isolation</li>
-
-<li>PCR Techniques</li>
-
-<li>Gel Electrophoresis</li>
-
-<li>Primer Design</li>
-
-<li>Sequence Analysis</li>
-
-</ul>
-
-</div>
-
-
-
-<div class="expertise-card">
-
-<div class="expertise-icon">🌿</div>
-
-<h3>Microalgal Biotechnology</h3>
-
-<ul>
-
-<li>Microalgae Cultivation</li>
-
-<li>Wastewater Treatment</li>
-
-<li>Carbon Capture</li>
-
-<li>Biostimulant Production</li>
-
-<li>Biomass Valorisation</li>
-
-</ul>
-
-</div>
-
-
-
-<div class="expertise-card">
-
-<div class="expertise-icon">⚗️</div>
-
-<h3>Analytical Techniques</h3>
-
-<ul>
-
-<li>HPLC</li>
-
-<li>GC-MS</li>
-
-<li>FTIR</li>
-
-<li>UV–Visible Spectroscopy</li>
-
-<li>FESEM Characterization</li>
-
-</ul>
-
-</div>
-
-
-
-<div class="expertise-card">
-
-<div class="expertise-icon">💻</div>
-
-<h3>Computational Biology</h3>
-
-<ul>
-
-<li>AutoDock 4.2 & AutoDock Vina</li>
-
-<li>PyRx</li>
-
-<li>SwissDock</li>
-
-<li>Discovery Studio</li>
-
-<li>UCSF Chimera</li>
-
-<li>Python Programming</li>
-
-</ul>
-
-</div>
-
-
-
-<div class="expertise-card">
-
-<div class="expertise-icon">🏭</div>
-
-<h3>Bioprocess Engineering</h3>
-
-<ul>
-
-<li>Fermentation Technology</li>
-
-<li>Bioreactor Operation</li>
-
-<li>Waste Valorisation</li>
-
-<li>Resource Recovery</li>
-
-<li>Circular Bioeconomy</li>
-
-</ul>
-
-</div>
-
-</div>
-
-</section>
-
-<!--======================================================
-                CAREER HIGHLIGHTS
-=======================================================-->
-
-<section id="highlights">
-
-<h2>Career Highlights</h2>
-
-<div class="highlights">
-
-<div class="highlight-box">
-
-<div class="highlight-number">
-
-2+
-
-</div>
-
-<div class="highlight-title">
-
-Publications
-
-</div>
-
-<div class="highlight-text">
-
-Peer-reviewed research articles published in international journals focusing on environmental biotechnology, sustainable agriculture and electrochemical sensing.
-
-</div>
-
-</div>
-
-
-
-<div class="highlight-box">
-
-<div class="highlight-number">
-
-4+
-
-</div>
-
-<div class="highlight-title">
-
-Research Projects
-
-</div>
-
-<div class="highlight-text">
-
-Research experience at the Central University of Rajasthan, CSIR-CIMAP and GB Pant National Institute of Himalayan Environment.
-
-</div>
-
-</div>
-
-
-
-<div class="highlight-box">
-
-<div class="highlight-number">
-
-20+
-
-</div>
-
-<div class="highlight-title">
-
-Laboratory Techniques
-
-</div>
-
-<div class="highlight-text">
-
-Hands-on experience with microbiological, analytical, electrochemical and computational biology techniques.
-
-</div>
-
-</div>
-
-
-
-<div class="highlight-box">
-
-<div class="highlight-number">
-
-6+
-
-</div>
-
-<div class="highlight-title">
-
-Research Areas
-
-</div>
-
-<div class="highlight-text">
-
-Environmental microbiology, microalgal biotechnology, waste valorisation, bioprocess engineering, computational biology and circular bioeconomy.
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!--======================================================
           RESEARCH GOALS & FUTURE DIRECTIONS
 =======================================================-->
 
@@ -1342,72 +990,6 @@ My long-term goal is to establish an interdisciplinary research program that bri
 
 </section>
 
-<!--======================================================
-            RESEARCH COLLABORATION
-=======================================================-->
-
-<section id="collaboration">
-
-<div class="collaboration">
-
-<h2>Let's Collaborate</h2>
-
-<p>
-
-I welcome opportunities to collaborate with researchers, academic institutions and industry partners working in environmental biotechnology, microbiology, sustainable bioprocess engineering and circular bioeconomy. I am always interested in discussing innovative research ideas, interdisciplinary collaborations and PhD opportunities that contribute to solving global environmental challenges.
-
-</p>
-
-<div class="collaboration-grid">
-
-<div class="collaboration-item">
-
-<h3>🔬 Research Collaboration</h3>
-
-<p>
-
-Collaborative research projects in environmental biotechnology, microbiology and sustainable bioprocesses.
-
-</p>
-
-</div>
-
-<div class="collaboration-item">
-
-<h3>🎓 PhD Opportunities</h3>
-
-<p>
-
-Interested in funded PhD positions and international research programs aligned with my research interests.
-
-</p>
-
-</div>
-
-<div class="collaboration-item">
-
-<h3>🌍 International Partnerships</h3>
-
-<p>
-
-Open to interdisciplinary collaborations with universities, research institutes and industry worldwide.
-
-</p>
-
-</div>
-
-</div>
-
-<a href="contact.html" class="contact-button">
-
-Get in Touch
-
-</a>
-
-</div>
-
-</section>
-
 <!-- ===================== FOOTER ===================== -->
 
 <footer>
@@ -1446,13 +1028,18 @@ Microbiologist | Environmental Biotechnology | Microalgal Biotechnology | Waste 
 
 <p>
 
-📧 <strong>Email:</strong> piyushgurjar492@gmail.com
+📧
+<a href="mailto:piyushgurjar492@gmail.com">
+
+piyushgurjar492@gmail.com
+
+</a>
 
 </p>
 
 <p>
 
-📍 <strong>Location:</strong> Lucknow, Uttar Pradesh, India
+📍 Lucknow, Uttar Pradesh, India
 
 </p>
 

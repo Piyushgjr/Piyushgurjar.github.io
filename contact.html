@@ -818,7 +818,7 @@ Whether you are interested in research collaboration, PhD opportunities, scienti
 
 <div class="contact-form">
 
-<form>
+<form id="contact-form">
 
 <div class="form-grid">
 
@@ -826,7 +826,7 @@ Whether you are interested in research collaboration, PhD opportunities, scienti
 
 <label>Full Name</label>
 
-<input type="text" placeholder="Enter your full name">
+<input type="text" name="from_name" placeholder="Enter your full name" required>
 
 </div>
 
@@ -834,7 +834,11 @@ Whether you are interested in research collaboration, PhD opportunities, scienti
 
 <label>Email Address</label>
 
-<input type="email" placeholder="Enter your email">
+<input
+type="email"
+name="reply_to"
+placeholder="Enter your email"
+required>
 
 </div>
 
@@ -842,7 +846,11 @@ Whether you are interested in research collaboration, PhD opportunities, scienti
 
 <label>Subject</label>
 
-<input type="text" placeholder="Subject">
+<input
+type="text"
+name="subject"
+placeholder="Subject"
+required>
 
 </div>
 
@@ -850,7 +858,10 @@ Whether you are interested in research collaboration, PhD opportunities, scienti
 
 <label>Message</label>
 
-<textarea placeholder="Write your message here..."></textarea>
+<textarea
+name="message"
+placeholder="Write your message here..."
+required></textarea>
 
 </div>
 
@@ -928,6 +939,50 @@ Microbiologist | Environmental Biotechnology | Microalgal Biotechnology | Waste 
 </div>
 
 </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script>
+
+emailjs.init({
+    publicKey: "BsUhQ_nYnaqkuY8MG",
+});
+
+</script>
+
+<script>
+
+const form = document.getElementById("contact-form");
+
+form.addEventListener("submit", function(e){
+
+e.preventDefault();
+
+emailjs.sendForm(
+
+"service_2xx9nf5",
+
+"template_qseywwe",
+
+this
+
+).then(function(){
+
+alert("Message sent successfully!");
+
+form.reset();
+
+}, function(error){
+
+alert("Failed to send message.");
+
+console.log(error);
+
+});
+
+});
+
+</script>
 
 </body>
 

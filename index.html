@@ -62,15 +62,17 @@ margin:auto;
 .hero{
 
 display:flex;
-justify-content:space-between;
+justify-content:center;
 align-items:center;
-flex-wrap:wrap;
+text-align:center;
 
 }
 
 .hero-text{
 
-flex:1;
+max-width:850px;
+margin:auto;
+text-align:center;
 
 }
 
@@ -91,57 +93,16 @@ margin-bottom:20px;
 
 .hero p{
 
-max-width:650px;
+max-width:750px;
+margin:25px auto 0;
+font-size:18px;
+line-height:1.9;
 
 }
 
 /*======================================================
                     HERO BUTTON
 =======================================================*/
-
-.button{
-
-display:inline-block;
-margin-top:30px;
-padding:16px 38px;
-background:#ffffff;
-color:#2E7D32;
-text-decoration:none;
-font-weight:600;
-font-size:17px;
-border-radius:10px;
-border:2px solid #ffffff;
-transition:all .3s ease;
-
-}
-
-.button:hover{
-
-background:#E8F5E9;
-color:#1B5E20;
-transform:translateY(-3px);
-
-}
-  
-.photo{
-
-width:250px;
-height:250px;
-border-radius:50%;
-overflow:hidden;
-border:6px solid white;
-box-shadow:0 10px 25px rgba(0,0,0,0.25);
-
-}
-
-.photo img{
-
-width:100%;
-height:100%;
-object-fit:cover;
-display:block;
-
-}
 
 nav{
 
@@ -309,12 +270,6 @@ flex-direction:column;
 
 }
 
-.photo{
-
-margin-top:40px;
-
-}
-
 .hero h1{
 
 font-size:36px;
@@ -335,13 +290,8 @@ padding:80px 0;
 
 .welcome-grid{
 
-display:grid;
-
-grid-template-columns:1.2fr 1fr;
-
-gap:50px;
-
-align-items:center;
+max-width:900px;
+margin:auto;
 
 }
 
@@ -364,54 +314,6 @@ line-height:1.9;
 margin-bottom:20px;
 
 text-align:justify;
-
-}
-
-.welcome-image img{
-
-width:100%;
-
-border-radius:20px;
-
-box-shadow:0 15px 35px rgba(0,0,0,.15);
-
-}
-
-.welcome-buttons{
-
-margin-top:35px;
-
-display:flex;
-
-gap:20px;
-
-flex-wrap:wrap;
-
-}
-
-.home-btn{
-
-background:#2E7D32;
-
-color:white;
-
-padding:14px 30px;
-
-text-decoration:none;
-
-border-radius:10px;
-
-font-weight:600;
-
-transition:.3s;
-
-}
-
-.home-btn:hover{
-
-background:#1B5E20;
-
-transform:translateY(-4px);
 
 }
   
@@ -437,25 +339,9 @@ Welcome to my academic portfolio. Explore my research, publications, projects an
 
 </p>
 
-<div class="welcome-buttons">
-
-<a href="about.html" class="button">
-
-Explore My Profile
-
-</a>
-
 </div>
 
 </div> <!-- Close hero-text -->
-
-<div class="photo">
-
-<img src="image/WhatsApp.jpg" alt="Piyush Gurjar">
-
-</div>
-
-</div> <!-- Close hero -->
 
 </header>
 

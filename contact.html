@@ -1,0 +1,1360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Contact | Piyush Gurjar</title>
+
+<link rel="icon" type="image/png" href="image/WhatsApp.png">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins,sans-serif;
+scroll-behavior:smooth;
+
+}
+
+body{
+
+background:#F8FFF8;
+color:#222;
+line-height:1.8;
+
+}
+
+.container{
+
+width:90%;
+max-width:1200px;
+margin:auto;
+
+}
+
+/*======================================================
+                    HEADER
+=======================================================*/
+
+header{
+
+background:linear-gradient(135deg,#2E7D32,#43A047);
+
+color:white;
+
+padding:80px 8%;
+
+}
+
+.hero{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+flex-wrap:wrap;
+
+gap:60px;
+
+}
+
+.hero-text{
+
+flex:1;
+
+}
+
+.hero h1{
+
+font-size:64px;
+
+margin-bottom:15px;
+
+}
+
+.hero h3{
+
+font-size:28px;
+
+font-weight:400;
+
+margin-bottom:25px;
+
+}
+
+.hero p{
+
+font-size:18px;
+
+max-width:700px;
+
+}
+
+.photo{
+
+width:420px;
+
+height:300px;
+
+border-radius:18px;
+
+overflow:hidden;
+
+border:6px solid white;
+
+box-shadow:0 15px 35px rgba(0,0,0,.25);
+
+}
+
+.photo img{
+
+width:100%;
+
+height:100%;
+
+object-fit:cover;
+
+}
+
+.button{
+
+display:inline-block;
+
+margin-top:30px;
+
+padding:14px 35px;
+
+background:white;
+
+color:#2E7D32;
+
+text-decoration:none;
+
+font-weight:600;
+
+border-radius:8px;
+
+transition:.3s;
+
+}
+
+.button:hover{
+
+background:#E8F5E9;
+
+}
+
+/*======================================================
+                    NAVIGATION
+=======================================================*/
+
+nav{
+
+background:white;
+
+padding:18px;
+
+text-align:center;
+
+box-shadow:0 2px 10px rgba(0,0,0,.08);
+
+position:sticky;
+
+top:0;
+
+z-index:1000;
+
+}
+
+nav a{
+
+text-decoration:none;
+
+margin:18px;
+
+font-size:18px;
+
+font-weight:600;
+
+color:#2E7D32;
+
+transition:.3s;
+
+}
+
+nav a:hover{
+
+color:#1B5E20;
+
+}
+
+nav a.active{
+
+border-bottom:3px solid #2E7D32;
+
+padding-bottom:8px;
+
+}
+
+/*======================================================
+                    GENERAL
+=======================================================*/
+
+section{
+
+padding:80px 0;
+
+}
+
+h2{
+
+color:#2E7D32;
+
+font-size:38px;
+
+margin-bottom:30px;
+
+}
+
+.card{
+
+background:white;
+
+padding:35px;
+
+border-radius:18px;
+
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+transition:.35s;
+
+}
+
+.card:hover{
+
+transform:translateY(-8px);
+
+box-shadow:0 18px 35px rgba(0,0,0,.15);
+
+}
+
+/*======================================================
+                CONTACT INFORMATION
+=======================================================*/
+
+.contact-grid{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+margin-top:40px;
+
+}
+
+.contact-card{
+
+background:white;
+padding:35px;
+border-radius:18px;
+text-align:center;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+transition:.35s;
+border-top:5px solid #2E7D32;
+
+}
+
+.contact-card:hover{
+
+transform:translateY(-8px);
+box-shadow:0 20px 40px rgba(0,0,0,.15);
+
+}
+
+.contact-icon{
+
+font-size:52px;
+margin-bottom:20px;
+
+}
+
+.contact-card h3{
+
+color:#2E7D32;
+font-size:24px;
+margin-bottom:15px;
+
+}
+
+.contact-card p{
+
+font-size:16px;
+line-height:1.8;
+color:#555;
+
+}
+
+.contact-card a{
+
+text-decoration:none;
+color:#2E7D32;
+font-weight:600;
+word-break:break-word;
+
+}
+
+.contact-card a:hover{
+
+text-decoration:underline;
+
+}
+
+/*======================================================
+            RESEARCH PROFILES
+=======================================================*/
+
+.profile-grid{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+margin-top:40px;
+
+}
+
+.profile-card{
+
+background:white;
+padding:35px;
+border-radius:18px;
+text-align:center;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+transition:.35s;
+border-left:5px solid #2E7D32;
+
+}
+
+.profile-card:hover{
+
+transform:translateY(-8px);
+
+box-shadow:0 20px 35px rgba(0,0,0,.15);
+
+}
+
+.profile-card img{
+
+width:70px;
+
+height:70px;
+
+object-fit:contain;
+
+margin-bottom:20px;
+
+transition:.3s;
+
+}
+
+.profile-card:hover img{
+
+transform:scale(1.1);
+
+}
+
+.profile-card h3{
+
+color:#2E7D32;
+
+margin-bottom:15px;
+
+font-size:24px;
+
+}
+
+.profile-card p{
+
+line-height:1.8;
+
+color:#555;
+
+margin-bottom:20px;
+
+}
+
+.profile-btn{
+
+display:inline-block;
+
+padding:12px 28px;
+
+background:#2E7D32;
+
+color:white;
+
+text-decoration:none;
+
+border-radius:8px;
+
+font-weight:600;
+
+transition:.3s;
+
+}
+
+.profile-btn:hover{
+
+background:#1B5E20;
+
+}
+
+/*======================================================
+                CONTACT FORM
+=======================================================*/
+
+.contact-form{
+
+background:white;
+padding:45px;
+border-radius:20px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+margin-top:40px;
+
+}
+
+.form-grid{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
+
+}
+
+.form-group{
+
+display:flex;
+flex-direction:column;
+
+}
+
+.form-group label{
+
+font-weight:600;
+margin-bottom:10px;
+color:#2E7D32;
+
+}
+
+.form-group input,
+.form-group textarea{
+
+padding:15px;
+border:2px solid #ddd;
+border-radius:10px;
+font-size:16px;
+transition:.3s;
+outline:none;
+
+}
+
+.form-group input:focus,
+.form-group textarea:focus{
+
+border-color:#2E7D32;
+
+}
+
+.form-group textarea{
+
+min-height:180px;
+resize:vertical;
+
+}
+
+.full-width{
+
+grid-column:1/-1;
+
+}
+
+.submit-btn{
+
+margin-top:30px;
+padding:15px 40px;
+background:#2E7D32;
+color:white;
+border:none;
+border-radius:10px;
+font-size:18px;
+font-weight:600;
+cursor:pointer;
+transition:.3s;
+
+}
+
+.submit-btn:hover{
+
+background:#1B5E20;
+transform:translateY(-3px);
+
+}
+
+/*======================================================
+            LET'S COLLABORATE
+=======================================================*/
+
+.collaboration{
+
+margin-top:70px;
+padding:60px;
+background:linear-gradient(135deg,#2E7D32,#43A047);
+border-radius:20px;
+text-align:center;
+color:white;
+box-shadow:0 15px 35px rgba(0,0,0,.15);
+
+}
+
+.collaboration h2{
+
+color:white;
+font-size:42px;
+margin-bottom:20px;
+
+}
+
+.collaboration p{
+
+max-width:850px;
+margin:auto;
+font-size:18px;
+line-height:1.9;
+margin-bottom:35px;
+
+}
+
+.collaboration-buttons{
+
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+
+}
+
+.collaboration-btn{
+
+display:inline-block;
+padding:15px 35px;
+background:white;
+color:#2E7D32;
+text-decoration:none;
+font-weight:600;
+font-size:18px;
+border-radius:10px;
+transition:.3s;
+
+}
+
+.collaboration-btn:hover{
+
+background:#E8F5E9;
+transform:translateY(-4px);
+
+}
+
+.collaboration-btn.secondary{
+
+background:transparent;
+color:white;
+border:2px solid white;
+
+}
+
+.collaboration-btn.secondary:hover{
+
+background:white;
+color:#2E7D32;
+
+}
+
+/*======================================================
+                AVAILABILITY
+=======================================================*/
+
+.availability{
+
+margin-top:70px;
+
+}
+
+.availability-card{
+
+background:white;
+padding:45px;
+border-radius:20px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.availability-card h2{
+
+margin-bottom:20px;
+
+}
+
+.availability-grid{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+margin-top:30px;
+
+}
+
+.availability-box{
+
+background:#F8FFF8;
+padding:25px;
+border-radius:15px;
+border-left:5px solid #2E7D32;
+
+}
+
+.availability-box h3{
+
+color:#2E7D32;
+margin-bottom:15px;
+
+}
+
+.availability-box p{
+
+line-height:1.8;
+
+}
+
+/*======================================================
+                        FAQ
+=======================================================*/
+
+.faq{
+
+margin-top:70px;
+
+}
+
+.faq-item{
+
+background:white;
+padding:30px;
+border-radius:18px;
+box-shadow:0 8px 20px rgba(0,0,0,.08);
+margin-bottom:25px;
+border-left:5px solid #2E7D32;
+
+}
+
+.faq-item h3{
+
+color:#2E7D32;
+margin-bottom:15px;
+font-size:22px;
+
+}
+
+.faq-item p{
+
+line-height:1.8;
+color:#555;
+
+}
+
+/*======================================================
+                      FOOTER
+=======================================================*/
+
+footer{
+
+background:#1B5E20;
+color:white;
+width:100%;
+padding:60px 0 30px;
+margin-top:70px;
+
+}
+
+.footer-content{
+
+width:90%;
+max-width:1200px;
+margin:auto;
+text-align:center;
+
+}
+
+.footer-content h3{
+
+font-size:32px;
+font-weight:600;
+margin-bottom:15px;
+
+}
+
+.footer-content p{
+
+font-size:17px;
+margin:10px 0;
+line-height:1.7;
+
+}
+
+.footer-social{
+
+display:flex;
+justify-content:center;
+align-items:center;
+gap:30px;
+margin:30px 0;
+
+}
+
+.footer-social img{
+
+width:45px;
+height:45px;
+transition:.3s;
+
+}
+
+.footer-social img:hover{
+
+transform:scale(1.15);
+
+}
+
+.copyright{
+
+margin-top:30px;
+padding-top:20px;
+border-top:1px solid rgba(255,255,255,.25);
+font-size:15px;
+opacity:.85;
+
+}
+  
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="container hero">
+
+<div class="hero-text">
+
+<h1>Contact</h1>
+
+<h3>Let's Connect for Research & Collaboration</h3>
+
+<p>
+
+Thank you for visiting my research portfolio. I welcome opportunities to discuss research collaborations, funded PhD positions, academic partnerships and innovative projects in environmental biotechnology, microbiology, microalgal biotechnology and sustainable bioprocess engineering.
+
+</p>
+
+<a href="cv/Piyush_Gurjar_CV.pdf" class="button">
+
+Download CV
+
+</a>
+
+</div>
+
+<div class="photo">
+
+<img src="image/contact.jpg" alt="Contact">
+
+</div>
+
+</div>
+
+</header>
+
+<nav>
+
+<a href="index.html">Home</a>
+
+<a href="about.html">About</a>
+
+<a href="education.html">Education</a>
+
+<a href="research.html">Research Experience</a>
+
+<a href="publications.html">Publications</a>
+
+<a href="gallery.html">Gallery</a>
+
+<a href="contact.html" class="active">Contact</a>
+
+</nav>
+
+<div class="container">
+
+<!--======================================================
+                CONTACT INFORMATION
+=======================================================-->
+
+<section>
+
+<h2>Contact Information</h2>
+
+<p>
+
+I welcome discussions on research collaborations, funded PhD opportunities, scientific projects and academic partnerships. Feel free to reach out through any of the following platforms.
+
+</p>
+
+<div class="contact-grid">
+
+<!--================ Email =================-->
+
+<div class="contact-card">
+
+<div class="contact-icon">
+
+📧
+
+</div>
+
+<h3>Email</h3>
+
+<p>
+
+<a href="mailto:piyushgurjar492@gmail.com">
+
+piyushgurjar492@gmail.com
+
+</a>
+
+<br><br>
+
+<a href="mailto:piyushgurjar492@outlook.com">
+
+piyushgurjar492@outlook.com
+
+</a>
+
+</p>
+
+</div>
+
+<!--================ Location =================-->
+
+<div class="contact-card">
+
+<div class="contact-icon">
+
+📍
+
+</div>
+
+<h3>Location</h3>
+
+<p>
+
+Lucknow, Uttar Pradesh
+
+<br>
+
+India
+
+</p>
+
+</div>
+
+<!--================ Research Interests =================-->
+
+<div class="contact-card">
+
+<div class="contact-icon">
+
+🔬
+
+</div>
+
+<h3>Research Interests</h3>
+
+<p>
+
+Environmental Biotechnology
+
+<br>
+
+Environmental Microbiology
+
+<br>
+
+Microalgal Biotechnology
+
+<br>
+
+Waste Valorisation
+
+<br>
+
+Bioprocess Engineering
+
+</p>
+
+</div>
+
+<!--================ Availability =================-->
+
+<div class="contact-card">
+
+<div class="contact-icon">
+
+🤝
+
+</div>
+
+<h3>Available For</h3>
+
+<p>
+
+Research Collaborations
+
+<br>
+
+Funded PhD Positions
+
+<br>
+
+Academic Partnerships
+
+<br>
+
+International Research Projects
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!--======================================================
+                RESEARCH PROFILES
+=======================================================-->
+
+<section>
+
+<h2>Research Profiles</h2>
+
+<p>
+
+My academic profiles provide access to my publications, research activities, professional background and ongoing scientific contributions.
+
+</p>
+
+<div class="profile-grid">
+
+<!--================ LinkedIn =================-->
+
+<div class="profile-card">
+
+<img src="image/Linkedin.png" alt="LinkedIn">
+
+<h3>LinkedIn</h3>
+
+<p>
+
+Connect with me professionally and stay updated on my research activities and career journey.
+
+</p>
+
+<a href="https://www.linkedin.com/in/piyush-gurjar-007026311/" target="_blank" class="profile-btn">
+
+Visit Profile
+
+</a>
+
+</div>
+
+<!--================ Google Scholar =================-->
+
+<div class="profile-card">
+
+<img src="image/Google Scholar.png" alt="Google Scholar">
+
+<h3>Google Scholar</h3>
+
+<p>
+
+Explore my publications, citations and research contributions indexed on Google Scholar.
+
+</p>
+
+<a href="https://scholar.google.com/citations?user=6r19AZgAAAAJ&hl=en" target="_blank" class="profile-btn">
+
+View Publications
+
+</a>
+
+</div>
+
+<!--================ ORCID =================-->
+
+<div class="profile-card">
+
+<img src="image/ORCID_iD.png" alt="ORCID">
+
+<h3>ORCID</h3>
+
+<p>
+
+Access my persistent researcher identifier and complete academic record.
+
+</p>
+
+<a href="https://orcid.org/0009-0009-3135-6695" target="_blank" class="profile-btn">
+
+Open ORCID
+
+</a>
+
+</div>
+
+<!--================ CV =================-->
+
+<div class="profile-card">
+
+<img src="image/cv.png" alt="Curriculum Vitae">
+
+<h3>Curriculum Vitae</h3>
+
+<p>
+
+Download my latest curriculum vitae containing research experience, publications and technical expertise.
+
+</p>
+
+<a href="cv/Piyush_Gurjar_CV.pdf" class="profile-btn">
+
+Download CV
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!--======================================================
+                    CONTACT FORM
+=======================================================-->
+
+<section>
+
+<h2>Send a Message</h2>
+
+<p>
+
+Whether you are interested in research collaboration, PhD opportunities, scientific discussions or academic networking, feel free to send me a message.
+
+</p>
+
+<div class="contact-form">
+
+<form>
+
+<div class="form-grid">
+
+<div class="form-group">
+
+<label>Full Name</label>
+
+<input type="text" placeholder="Enter your full name">
+
+</div>
+
+<div class="form-group">
+
+<label>Email Address</label>
+
+<input type="email" placeholder="Enter your email">
+
+</div>
+
+<div class="form-group full-width">
+
+<label>Subject</label>
+
+<input type="text" placeholder="Subject">
+
+</div>
+
+<div class="form-group full-width">
+
+<label>Message</label>
+
+<textarea placeholder="Write your message here..."></textarea>
+
+</div>
+
+</div>
+
+<button class="submit-btn">
+
+Send Message
+
+</button>
+
+</form>
+
+</div>
+
+</section>
+
+<!--======================================================
+                LET'S COLLABORATE
+=======================================================-->
+
+<section>
+
+<div class="collaboration">
+
+<h2>Let's Collaborate</h2>
+
+<p>
+
+I am always enthusiastic about collaborating with researchers, universities, research institutes and industry partners working in environmental biotechnology, microbiology, microalgal biotechnology, sustainable bioprocess engineering and circular bioeconomy. Whether you are looking for a research collaborator, discussing a funded PhD opportunity or exploring innovative scientific ideas, I would be delighted to connect.
+
+</p>
+
+<div class="collaboration-buttons">
+
+<a href="mailto:piyushgurjar492@gmail.com" class="collaboration-btn">
+
+Email Me
+
+</a>
+
+<a href="cv/Piyush_Gurjar_CV.pdf" class="collaboration-btn secondary">
+
+Download CV
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!--======================================================
+                    AVAILABILITY
+=======================================================-->
+
+<section class="availability">
+
+<div class="availability-card">
+
+<h2>Availability</h2>
+
+<p>
+
+I welcome opportunities to collaborate with researchers, universities and industry professionals working in environmental biotechnology, microbiology and sustainable bioprocess engineering.
+
+</p>
+
+<div class="availability-grid">
+
+<div class="availability-box">
+
+<h3>🎓 PhD Opportunities</h3>
+
+<p>
+
+Available to discuss funded PhD positions in environmental biotechnology, microbiology and related disciplines.
+
+</p>
+
+</div>
+
+<div class="availability-box">
+
+<h3>🔬 Research Collaboration</h3>
+
+<p>
+
+Interested in multidisciplinary research collaborations and international scientific projects.
+
+</p>
+
+</div>
+
+<div class="availability-box">
+
+<h3>📚 Academic Networking</h3>
+
+<p>
+
+Happy to connect with researchers, faculty members and students interested in collaborative research and scientific exchange.
+
+</p>
+
+</div>
+
+<div class="availability-box">
+
+<h3>🌍 International Opportunities</h3>
+
+<p>
+
+Open to collaborations with universities, research institutes and laboratories worldwide.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!--======================================================
+                        FAQ
+=======================================================-->
+
+<section class="faq">
+
+<h2>Frequently Asked Questions</h2>
+
+<div class="faq-item">
+
+<h3>Are you available for PhD opportunities?</h3>
+
+<p>
+
+Yes. I am actively seeking fully funded PhD opportunities in environmental biotechnology, microbiology, microalgal biotechnology, sustainable bioprocess engineering and related interdisciplinary fields.
+
+</p>
+
+</div>
+
+<div class="faq-item">
+
+<h3>Are you interested in research collaborations?</h3>
+
+<p>
+
+Absolutely. I welcome collaborations with universities, research institutes and industry partners working in environmental sustainability, waste valorisation, computational biology and circular bioeconomy.
+
+</p>
+
+</div>
+
+<div class="faq-item">
+
+<h3>Which research areas are you currently focusing on?</h3>
+
+<p>
+
+My current research focuses on waste valorisation, microalgal biotechnology, environmental microbiology, bioprocess engineering, resource recovery and computational biology.
+
+</p>
+
+</div>
+
+<div class="faq-item">
+
+<h3>How can I contact you?</h3>
+
+<p>
+
+The fastest way is through email or LinkedIn. I generally respond within a few days to research-related inquiries.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+
+<footer>
+
+<div class="footer-content">
+
+<h3>Piyush Gurjar</h3>
+
+<p>
+
+Microbiologist | Environmental Biotechnology | Microalgal Biotechnology | Waste Valorisation
+
+</p>
+
+<div class="footer-social">
+
+<a href="https://www.linkedin.com/in/piyush-gurjar-007026311/" target="_blank">
+
+<img src="image/Linkedin.png" alt="LinkedIn" style="width:65px; height:65px;">
+
+</a>
+
+<a href="https://scholar.google.com/citations?user=6r19AZgAAAAJ&hl=en" target="_blank">
+
+<img src="image/Google Scholar.png" alt="Google Scholar">
+
+</a>
+
+<a href="https://orcid.org/0009-0009-3135-6695" target="_blank">
+
+<img src="image/ORCID_iD.png" alt="ORCID">
+
+</a>
+
+</div>
+
+<p>
+
+📧 piyushgurjar492@gmail.com
+
+</p>
+
+<p>
+
+📍 Lucknow, Uttar Pradesh, India
+
+</p>
+
+<p class="copyright">
+
+© 2026 Piyush Gurjar. All Rights Reserved.
+
+</p>
+
+</div>
+
+</footer>
+
+</body>
+
+</html>

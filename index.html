@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Piyush Gurjar | Research Portfolio</title>
+<title>Home | Piyush Gurjar</title>
 
 <link rel="icon" type="image/png" href="image/whatsApp.png">
 
@@ -40,11 +40,14 @@ line-height:1.7;
 
 }
 
-header{ 
+header{
 
-background:#2E7D32; 
-color:white; 
-padding:70px 10%; 
+background:
+linear-gradient(rgba(46,125,50,.88),rgba(67,160,71,.88)),
+url("image/header-bg.jpg") center/cover;
+
+padding:70px 10%;
+color:white;
 
 }
 
@@ -139,6 +142,17 @@ transition:.3s;
 nav a:hover{
 
 color:#1B5E20;
+background:#E8F5E9;
+padding:8px 15px;
+border-radius:8px;
+
+}
+
+nav a.active{
+
+color:#1B5E20;
+border-bottom:3px solid #2E7D32;
+padding-bottom:8px;
 
 }
 
@@ -802,29 +816,39 @@ color:#2E7D32;
 
 <h1>Piyush Gurjar</h1>
 
-<h3>Microbiologist | Environmental Biotechnology | Microalgal Biotechnology | Waste Valorisation</h3>
+<h3>Research Portfolio</h3>
 
 <p>
 
-I am a microbiologist passionate about sustainable biotechnology, environmental microbiology, microalgal biotechnology, waste valorisation and bioprocess engineering. My research integrates microbiology, computational biology and environmental engineering to develop sustainable solutions for pollution remediation, circular bioeconomy and resource recovery.
+Welcome to my academic portfolio. Explore my research, publications, projects and scientific contributions in environmental biotechnology, environmental microbiology, microalgal biotechnology and sustainable bioprocess engineering.
 
 </p>
 
-<a href="cv/Piyush_Gurjar_CV.pdf" class="button">Download CV</a>
+<div class="welcome-buttons">
+
+<a href="about.html" class="button">
+
+Explore My Profile
+
+</a>
 
 </div>
+
+</div> <!-- Close hero-text -->
 
 <div class="photo">
-    <img src="image/WhatsApp.jpg" alt="Piyush Gurjar">
-</div>
+
+<img src="image/WhatsApp.jpg" alt="Piyush Gurjar">
 
 </div>
+
+</div> <!-- Close hero -->
 
 </header>
 
 <nav>
 
-<a href="index.html">Home</a>
+<a href="index.html" class="active">Home</a>
 
 <a href="about.html">About</a>
 
@@ -1104,11 +1128,7 @@ Learn More →
 
 </div>
 
-</div>
-
 </section>
-
-</div>
 
 <!--======================================================
                 LATEST PUBLICATIONS
@@ -1336,6 +1356,8 @@ Download CV
 
 </section>
 
+</div>
+  
 <!-- ===================== FOOTER ===================== -->
 
 <footer>
